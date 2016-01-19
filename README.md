@@ -8,4 +8,6 @@ Requires `unoconv` and imagemagick's `convert` to be installed and in your path.
 
 This was written for Linux, if you're on Windows I'm pretty sure you can convert to regular images directly with imagemagick. This script converts it to a PDF first using LibreOffice/OpenOffice via `unoconv`, because for some reason that works best on Linux based on my stackoverflow searches.
 
-**Usage**: `python3 convert-emf-in-pptx <PPTX file>`
+**Usage**: `python3 convert-emf-in-pptx <PPTX file> [Converted PPTX filename]`
+
+If the converted filename is not given, it defaults to `[original basename]_converted.pptx`.
